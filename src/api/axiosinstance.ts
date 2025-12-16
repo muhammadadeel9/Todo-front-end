@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: import.meta.env.VITE_BASE_URL, // ✅ Make sure this matches your backend URL
+  baseURL: import.meta.env.VITE_BACKEND_URL, // ✅ Make sure this matches your backend URL
+  // baseURL: 'https://todo-back-end-five.vercel.app/api',
   headers: {
     'Content-Type': 'application/json',
   },
